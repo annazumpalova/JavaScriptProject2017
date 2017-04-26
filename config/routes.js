@@ -1,5 +1,5 @@
 const userController = require('./../controllers/user');
-const articleController = require('./../controllers/article');
+const carController = require('./../controllers/car');
 const homeController = require('./../controllers/home');
 
 module.exports = (app) => {
@@ -13,15 +13,15 @@ module.exports = (app) => {
 
     app.get('/user/logout', userController.logout);
 
-    app.get('/article/create', articleController.createGet);
-    app.post('/article/create', articleController.createPost);
+    app.get('/car/create', carController.createGet);
+    app.post('/car/create', carController.createPost);
 
-    app.get('/article/details/:id', articleController.details);
+    app.get('/car/details/:id', carController.details);
 
-    app.get('/article/edit/:id', articleController.editGet);
-    app.post('/article/edit/:id', articleController.editPost);
+    app.get('/car/edit/:id', carController.editGet);
+    app.post('/car/edit/:id', carController.editPost);
 
-    app.get('/article/delete/:id', articleController.deleteGet);
-    app.post('/article/delete/:id', articleController.deletePost);
+    app.get('/car/delete/:id', carController.deleteGet);
+    app.post('/car/delete/:id', carController.deletePost);
 };
 
