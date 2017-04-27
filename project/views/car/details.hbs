@@ -1,0 +1,44 @@
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-12">
+            <article>
+                <header>
+                  <h2>MAKE:  {{article.make}}</h2>
+                </header>
+
+                <p>
+                 ADDITIONAL INFO:  {{article.information}}
+                </p>
+
+                <p>
+                 MODEL:    {{article.model}}
+                </p>
+
+                <p>
+                  PRICE:   {{article.price}}
+                </p>
+
+                <p>
+                  MILEAGE:  {{article.mileage}}
+                </p>
+
+                <br>
+                <br>
+                <small class="author">
+                   Owner's full name:  {{article.author.fullName}}
+                </small>
+
+
+                <footer>
+                    <div class="pull-right">
+                        {{#if isUserAuthorized}}
+                            <a class="btn btn-success btn-xs" href="/car/edit/{{article.id}}">Edit &raquo;</a>
+                            <a class="btn btn-danger btn-xs" href="/car/delete/{{article.id}}">Delete &raquo;</a>
+                        {{/if}}
+                        <a class="btn btn-default btn-xs" href="/">Back &raquo;</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </div>
+</div>

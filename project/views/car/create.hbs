@@ -1,0 +1,67 @@
+<div class="container body-content span=8 offset=2">
+    <div class="well">
+        <form class="form-horizontal" enctype="multipart/form-data" method="POST" action="/car/create">
+            <fieldset>
+                <legend>Add a vehicle up for sale</legend>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="vehicleMake">Vehicle make</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="vehicleMake" placeholder="Vehicle Make" name="make" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="model">Model</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="model" placeholder="Model" name="model" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="bodyType">Body type</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="bodyType" placeholder="Body type" name="body" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="fuelType">Fuel type</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="fuelType" placeholder="Fuel type" name="fuel" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="priceUpTo">Price</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="price" placeholder="Price" name="price" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="mileageUpTo">Mileage</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="mileage" placeholder="Mileage" name="mileage" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="firstReagistration">First registration</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="firstRegistration" placeholder="First registration" name="registration" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="additionalVehicleInformation">Additional vehicle information</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" id="additionalVehicleInformation" rows="5" name="information" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+
+                        <button type="reset" class="btn btn-default">Cancel</button>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
